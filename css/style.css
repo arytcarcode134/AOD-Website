@@ -2115,7 +2115,7 @@ a:focus {
 .before-after {
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .ba-container {
@@ -2152,3 +2152,22 @@ a:focus {
 }
 
 
+@media (max-width: 768px) {
+  .video-section {
+    flex-direction: column;   /* 👈 stack vertically */
+    gap: 30px;
+  }
+
+  .video-section video {
+    width: 100%;
+  }
+
+  .ba-container {
+    width: 100%;
+    max-width: 320px;        /* prevents huge images */
+  }
+
+  .ba-slider {
+    width: 90%;
+  }
+}
