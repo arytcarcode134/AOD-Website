@@ -208,7 +208,7 @@
                 <li><i class="far fa-check-circle"></i>Interior Cleaning</li>
                 <li><i class="far fa-check-circle"></i>Engine Cleaning</li>
               </ul>
-              <a class="btn btn-custom" href="service.html">Get a Quote</a>
+              <a class="btn btn-custom" href="#contact">Get a Quote</a>
             </div>
           </div>
         </div>
@@ -484,6 +484,62 @@
     </div>
     <!-- Service End -->
 
+
+    <!-- Video and Gallery Start -->
+
+    <div class="container">
+
+      <div class="section-header text-center" style="margin-top: 50px;">
+          <p>What We Do?</p>
+          <h2>Our Work — Car Detailing in West Palm Beach</h2>
+        </div>
+
+    <section class="video-section">
+      
+         <div class="ba-container">
+    <img src="img/dirty-cupholder.JPG" alt="Before" class="ba-image before">
+    <img src="img/clean-cup-holder.jpg" alt="After" class="ba-image after">
+
+    <input
+      type="range"
+      min="0"
+      max="100"
+      value="50"
+      class="ba-slider"
+      aria-label="Before and after slider"
+    >
+  </div>
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+  >
+    <source src="img/relaxing-new-car.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+    <div class="ba-container">
+    <img src="img/dirty-mirror.jpg" alt="Before" class="ba-image before">
+    <img src="img/clean-mirror.jpg" alt="After" class="ba-image after">
+
+    <input
+      type="range"
+      min="0"
+      max="100"
+      value="50"
+      class="ba-slider"
+      aria-label="Before and after slider"
+    >
+  </div>
+</section>
+</div>
+
+    <!-- Video and Gallery End -->
+
+
+
    
 
     <!-- Testimonial Start -->
@@ -670,9 +726,9 @@
               <h2>Useful Links</h2>
               <a href="">Terms of use</a>
               <a href="">Privacy policy</a>
-              <a href="">Cookies</a>
-              <a href="">Help</a>
-              <a href="">FAQs</a>
+              <!-- <a href="">Cookies</a>
+              <a href="">Help</a> -->
+              <a href="#faq-section">FAQs</a>
             </div>
           </div>
           <!-- <div class="col-lg-3 col-md-6">
@@ -725,6 +781,19 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+  <script>
+  document.querySelectorAll('.ba-container').forEach(container => {
+    const slider = container.querySelector('.ba-slider');
+    const afterImage = container.querySelector('.ba-image.after');
+
+    slider.addEventListener('input', () => {
+      afterImage.style.clipPath = `inset(0 ${100 - slider.value}% 0 0)`;
+    });
+  });
+</script>
+
+
   </body>
 
       <style>

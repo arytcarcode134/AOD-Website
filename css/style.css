@@ -2098,3 +2098,57 @@ a:focus {
   border: 0;
 }
 
+.video-section {
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center (if section has height) */
+  padding: 40px 0;
+}
+
+.video-section video {
+  width: 75%;             /* 👈 make it smaller */
+  max-width: 100%;
+  height: 500px;
+  border-radius: 12px;
+}
+
+.before-after {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.ba-container {
+  position: relative;
+  width: 400px;          /* adjust size here */
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.ba-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Top image (After) */
+.ba-image.after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: inset(0 50% 0 0);
+}
+
+/* Slider */
+.ba-slider {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
