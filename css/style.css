@@ -2171,3 +2171,38 @@ a:focus {
     width: 90%;
   }
 }
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* side by side */
+  gap: 25px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.logo-grid img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-grid img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .logo-grid {
+    grid-template-columns: 1fr; /* stack */
+    gap: 35px;
+  }
+
+  .logo-grid img {
+    max-width: 300px;
+  }
+}
+
