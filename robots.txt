@@ -1,0 +1,9 @@
+# robots.txt for https://theartofdetailing.netlify.app/
+
+User-agent: *
+
+# Allow everything else to be crawled
+Allow: /
+
+# Sitemap location (update once generated)
+Sitemap: https://theartofdetailing.netlify.app/sitemap.xml
