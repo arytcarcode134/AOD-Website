@@ -456,55 +456,76 @@
 
 
     <!-- Video and Gallery Start -->
+<div class="container" id="gallery">
 
-    <div class="container" id="gallery">
-
-      <div class="section-header text-center" style="margin-top: 50px;">
-          <p>What We Do?</p>
-          <h2>Our Work — Car Detailing in West Palm Beach</h2>
-        </div>
-
-    <section class="video-section">
-      
-         <div class="ba-container">
-    <img src="img/dirty-cupholder.JPG" alt="Before" class="ba-image before">
-    <img src="img/clean-cup-holder.jpg" alt="After" class="ba-image after">
-
-    <input
-      type="range"
-      min="0"
-      max="100"
-      value="50"
-      class="ba-slider"
-      aria-label="Before and after slider"
-    >
+  <div class="section-header text-center" style="margin-top: 50px;">
+    <p>What We Do?</p>
+    <h2>Our Work — Car Detailing in West Palm Beach</h2>
   </div>
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="auto"
-  >
-    <source src="img/relaxing-new-car.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
-    <div class="ba-container">
-    <img src="img/dirty-mirror.jpg" alt="Before" class="ba-image before">
-    <img src="img/clean-mirror.jpg" alt="After" class="ba-image after">
+  <section class="gallery-grid">
 
-    <input
-      type="range"
-      min="0"
-      max="100"
-      value="50"
-      class="ba-slider"
-      aria-label="Before and after slider"
-    >
-  </div>
-</section>
+    <!-- Before / After Slider -->
+    <div class="gallery-item">
+      <div class="ba-container">
+        <img src="img/dirty-cupholder.JPG" class="ba-image before">
+        <img src="img/clean-cup-holder.jpg" class="ba-image after">
+        <input type="range" min="0" max="100" value="50" class="ba-slider">
+      </div>
+      <p class="ba-label">Interior Detailing</p>
+    </div>
+
+    <!-- Video -->
+    <div class="gallery-item video-item">
+      <video autoplay muted loop playsinline>
+        <source src="img/relaxing-new-car.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Before / After Slider -->
+    <div class="gallery-item">
+      <div class="ba-container">
+        <img src="img/dirty-mirror.jpg" class="ba-image before">
+        <img src="img/clean-mirror.jpg" class="ba-image after">
+        <input type="range" min="0" max="100" value="50" class="ba-slider">
+      </div>
+      <p class="ba-label">Bug Removal</p>
+    </div>
+
+<!-- First Row -->
+
+<div class="gallery-item">
+  <img src="img/luxury_car_detailing_benz.jpg" alt="Mercedes Benz detailing" class="gallery-image">
 </div>
+
+<div class="gallery-item">
+  <img src="img/professional-car-detailing-west-palm-beach.png" alt="Lincoln Nautilus detailing" class="gallery-image">
+</div>
+
+
+<div class="gallery-item">
+  <img src="img/interior-detailing-west-palm-beach.jpg" alt="Interior Detailing in West Palm Beach" class="gallery-image">
+</div>
+
+<!-- Second Row -->
+
+<div class="gallery-item">
+  <img src="img/nissan-car-detailing.jpg" alt="Nissan Car Detailing in West Palm Beach" class="gallery-image">
+</div>
+
+<div class="gallery-item">
+  <img src="img/car-detailing-lincoln.jpg" alt="Lincoln Nautilus detailing" class="gallery-image">
+</div>
+
+
+<div class="gallery-item">
+  <img src="img/chevy-car-detailing.jpeg" alt="Chevy Car Detailing in West Palm Beach" class="gallery-image">
+</div>
+
+  </section>
+</div>
+
+
 
     <!-- Video and Gallery End -->
 

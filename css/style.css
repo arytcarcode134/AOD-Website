@@ -2215,3 +2215,61 @@ a:focus {
   }
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.ba-container {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.ba-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ba-image.after {
+  clip-path: inset(0 50% 0 0);
+}
+
+.ba-slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.ba-label {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.video-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Static image gallery */
+.gallery-item {
+  background: white;
+  border-radius: 12px;
+  /* overflow: hidden; */
+  padding: 0;
+  height: 300px; /* SAME HEIGHT */
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;    
+  object-fit: cover;
+}
