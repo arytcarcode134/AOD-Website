@@ -22,7 +22,8 @@ def resize_image(input_path, output_path, target_width):
 # input_path = "img/gmc-pickup-truck.webp"
 # output_path = "img/gmc-pickup-truck-" + str(target_width) + ".webp"
 
-images = [("img/bmw-cabin.webp", "img/bmw-cabin-500.webp", 500)]
+images = [("img/upholestry-cleaning-west-palm-beach.webp", "img/upholstery-cleaning-west-palm-beach-500.webp", 500),
+          ("img/pet-hair-cleanup-car-detailing.webp", "img/pet-hair-cleanup-car-detailing-500.webp", 500),]
 
 for i in images:
     print(i[0], i[1], i[2])
