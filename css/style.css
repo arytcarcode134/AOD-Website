@@ -2301,3 +2301,10 @@ a:focus {
   width: 100%;
   border-radius: 12px;
 }
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
