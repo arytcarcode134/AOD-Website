@@ -552,7 +552,7 @@ a:focus {
     padding-bottom: 5px;
 }
 
-.page-header h2::after {
+.page-header h1::after {
     position: absolute;
     content: "";
     width: 100px;
@@ -593,7 +593,7 @@ a:focus {
         padding: 60px 0;
     }
     
-    .page-header h2 {
+    .page-header h1 {
         font-size: 45px;
     }
     
@@ -607,7 +607,7 @@ a:focus {
         padding: 45px 0;
     }
     
-    .page-header h2 {
+    .page-header h1 {
         font-size: 35px;
     }
     
