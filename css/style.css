@@ -543,7 +543,7 @@ a:focus {
     border-top: 1px dotted #ffffff;
 }
 
-.page-header h2 {
+.page-header h1 {
     position: relative;
     color: #ffffff;
     font-size: 60px;
