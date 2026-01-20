@@ -639,6 +639,17 @@ a:focus {
     color: #E81C2E;
 }
 
+.price-header p{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color:#202C45
+}
+
+.price-text  {
+     font-size: 55px;
+}
+
 .section-header p::after {
     position: absolute;
     content: "";
