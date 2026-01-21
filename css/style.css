@@ -374,7 +374,7 @@ a:focus {
     z-index: 2;
 }
 
-.carousel .carousel-text h3 {
+.carousel .carousel-text p.first-headline {
     color: #E81C2E;
     font-size: 20px;
     font-weight: 700;
@@ -461,11 +461,11 @@ a:focus {
 }
 
 @media (max-width: 991.98px) {
-    .carousel .carousel-text h3 {
+    .carousel .carousel-text p {
         margin-bottom: 5px;
     }
     
-    .carousel .carousel-text h3 {
+    .carousel .carousel-text p {
         font-size: 60px;
     }
     
@@ -481,7 +481,7 @@ a:focus {
 }
 
 @media (max-width: 767.98px) {
-    .carousel .carousel-text h3 {
+    .carousel .carousel-text p {
         font-size: 18px;
         letter-spacing: 2px;
         margin-bottom: 15px;
@@ -504,7 +504,7 @@ a:focus {
 }
 
 @media (max-width: 575.98px) {
-    .carousel .carousel-text h3 {
+    .carousel .carousel-text p {
         font-size: 14px;
         letter-spacing: 1px;
         margin-bottom: 10px;
@@ -637,6 +637,17 @@ a:focus {
     letter-spacing: 4px;
     text-transform: uppercase;
     color: #E81C2E;
+}
+
+.price-header p{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color:#202C45
+}
+
+.price-text  {
+     font-size: 55px;
 }
 
 .section-header p::after {
