@@ -1,8 +1,11 @@
-from PIL import Image
+from PIL import Image, ImageOps
 
 def resize_image(input_path, output_path, target_width):
     # OPEN IMAGE
     img = Image.open(input_path)
+
+    # FIX ORIENTATION USING EXIF DATA
+    img = ImageOps.exif_transpose(img)
 
     # CALCULATE NEW HEIGHT (keeps proportions)
     width, height = img.size
@@ -17,13 +20,11 @@ def resize_image(input_path, output_path, target_width):
 
     print(f"Image resized to {target_width}x{new_height} and saved as {output_path}")
 
-# SETTINGS
-# target_width = 1200
-# input_path = "img/gmc-pickup-truck.webp"
-# output_path = "img/gmc-pickup-truck-" + str(target_width) + ".webp"
 
-images = [("img/upholestry-cleaning-west-palm-beach.webp", "img/upholstery-cleaning-west-palm-beach-500.webp", 500),
-          ("img/pet-hair-cleanup-car-detailing.webp", "img/pet-hair-cleanup-car-detailing-500.webp", 500),]
+# images = [("img/upholestry-cleaning-west-palm-beach.webp", "img/upholstery-cleaning-west-palm-beach-500.webp", 500),
+#           ("img/pet-hair-cleanup-car-detailing.webp", "img/pet-hair-cleanup-car-detailing-500.webp", 500),]
+
+images = [("img/the-art-of-detailing-sedan.jpg", "img/the-art-of-detailing-sedan-500.jpg", 500),]
 
 for i in images:
     print(i[0], i[1], i[2])
