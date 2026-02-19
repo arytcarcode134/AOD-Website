@@ -24,7 +24,12 @@ def resize_image(input_path, output_path, target_width):
 # images = [("img/upholestry-cleaning-west-palm-beach.webp", "img/upholstery-cleaning-west-palm-beach-500.webp", 500),
 #           ("img/pet-hair-cleanup-car-detailing.webp", "img/pet-hair-cleanup-car-detailing-500.webp", 500),]
 
-images = [("img/the-art-of-detailing-sedan.jpg", "img/the-art-of-detailing-sedan-500.jpg", 500),]
+images = [
+        # ("img/white_toyota_sedan.webp", "img/white_toyota_sedan-500.webp", 500),
+        #   ("img/blue_volkswagen.webp", "img/blue_volkswagen-500.webp", 500),
+        #   ("img/gmc-pickup-truck-1200.webp", "gmc-pickup-truck-500.webp", 500),
+         ("img/bmw-steering-wheel.webp", "img/bmw-steering-wheel-500.webp", 500),
+         ("img/black-red-infiniti.webp", "img/black-red-infiniti-500.webp", 500)]
 
 for i in images:
     print(i[0], i[1], i[2])
