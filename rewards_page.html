@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards</title>
+</head>
+<body>
+
+    <input id="phone" placeholder="Enter phone number" />
+    <div>Reward Points:<div id="result"></div></div>
+    
+</body>
+</html>
+
+<script>
+document.getElementById("phone").addEventListener("change", async function() {
+
+  const phone = this.value;
+
+  const res = await fetch(`/.netlify/functions/getContact?phone=${phone}`);
+  const data = await res.json();
+
+  if (data.length > 0) {
+    document.getElementById("result").innerText =
+      data[0].first_name + " " + data[0].last_name;
+  } else {
+    document.getElementById("result").innerText = "Not found";
+  }
+  
+
+});
+</script>
