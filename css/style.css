@@ -668,6 +668,12 @@ a:focus {
     left: 50%;
 }
 
+.section-header.text-left h2{
+
+    font-size: larger;
+
+}
+
 .section-header h2 {
     margin: 0;
     font-size: 45px;
