@@ -2203,7 +2203,7 @@ a:focus {
 .logo-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* side by side */
-  gap: 25px;
+  gap: 15px;
   align-items: center;
   justify-items: center;
   margin-top: 20px;
