@@ -62,6 +62,7 @@
         animateIn: 'fadeIn',
         items: 1,
         smartSpeed: 300,
+        autoplayTimeout: 2500,
         dots: false,
         loop: true,
         nav : true,
