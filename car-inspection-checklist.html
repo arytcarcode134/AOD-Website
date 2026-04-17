@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Detailing Inspection Checklist</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 25px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>The Art of Detailing Car Condition Inspection</h1>
+
+<form name="detailing-checklist" method="POST" data-netlify="true">
+<input type="hidden" name="car-inspection-form" value="detailing-checklist">
+
+<!-- Customer Info -->
+<label>Customer Name: <input type="text" name="customer_name" placeholder="Customer Name" required></label>
+<label>Vehicle: <input type="text" name="vehicle" placeholder="Vehicle (Make/Model)" required></label>
+<label>Date: <input type="date" name="inspection_date" required></label>
+
+<!-- Paint -->
+<h2>🔍 Paint Condition</h2>
+<label><input type="checkbox" name="paint[]" value="Swirl marks"> Swirl marks</label>
+<label><input type="checkbox" name="paint[]" value="Scratches"> Scratches / deep scratches</label>
+<label><input type="checkbox" name="paint[]" value="Oxidation"> Oxidation / fading</label>
+<label><input type="checkbox" name="paint[]" value="Water spots"> Water spots</label>
+<label><input type="checkbox" name="paint[]" value="Paint chips"> Paint chips</label>
+
+<!-- Wheels -->
+<h2>🛞 Wheels & Tires</h2>
+<label><input type="checkbox" name="wheels[]" value="Brake dust"> Brake dust buildup</label>
+
+<!-- Glass -->
+<h2>🪟 Glass & Mirrors</h2>
+<label><input type="checkbox" name="glass[]" value="Water spots"> Water spots</label>
+
+<!-- Trim -->
+<h2>🧴 Trim & Plastics</h2>
+<label><input type="checkbox" name="trim[]" value="Faded trim"> Faded trim</label>
+<label><input type="checkbox" name="trim[]" value="Cracking"> Cracking</label>
+
+<!-- Seats -->
+<h2>💺 Seats</h2>
+<label><input type="checkbox" name="seats[]" value="Stains"> Stains</label>
+<label><input type="checkbox" name="seats[]" value="Tears"> Tears / cracks (leather)</label>
+<label><input type="checkbox" name="seats[]" value="Odors"> Odors</label>
+<label><input type="checkbox" name="seats[]" value="Pet hair"> Pet hair</label>
+
+<!-- Carpets -->
+<h2>🧼 Carpets & Floor Mats</h2>
+<label><input type="checkbox" name="carpets[]" value="Dirt"> Dirt buildup</label>
+<label><input type="checkbox" name="carpets[]" value="Stains"> Stains</label>
+<label><input type="checkbox" name="carpets[]" value="Moisture"> Moisture / mold smell</label>
+
+<!-- Dashboard -->
+<h2>🧽 Dashboard & Console</h2>
+<label><input type="checkbox" name="dashboard[]" value="Dust"> Dust buildup</label>
+<label><input type="checkbox" name="dashboard[]" value="Sticky"> Sticky residue</label>
+<label><input type="checkbox" name="dashboard[]" value="UV damage"> UV damage / fading</label>
+
+<!-- Door Panels -->
+<h2>🚪 Door Panels</h2>
+<label><input type="checkbox" name="doors[]" value="Scuffs"> Scuffs and Scratches</label>
+
+<!-- Headliner -->
+<h2>🧵 Headliner</h2>
+<label><input type="checkbox" name="headliner[]" value="Stains"> Stains</label>
+
+
+<!-- Submit -->
+<button type="submit">Submit Checklist</button>
+
+</form>
+</div>
+
+</body>
+</html>
