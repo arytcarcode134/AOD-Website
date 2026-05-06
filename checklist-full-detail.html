@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Detail Checklist</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+}
+
+.section {
+  margin-top: 25px;
+}
+
+.section h2 {
+  background: #111;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.checklist input {
+  margin-right: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<form name="full-detail-checklist" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="full-detail-checklist">
+
+<div class="container">
+<h1>Full Detail Checklist</h1>
+
+<div class="section">
+<h2>Client Info</h2>
+
+<label>
+Client Name:
+<input type="text" name="clientName">
+</label>
+<br><br>
+
+<label>
+Client Vehicle:
+<input type="text" name="clientCar">
+</label>
+
+</div>
+
+
+<div class="section">
+<h2>Exterior Detail</h2>
+<ul class="checklist">
+<li><label><input type="checkbox" name="Hand wash"> Hand wash</label></li>
+<li><label><input type="checkbox" name="Brazilian Carnauba Wax"> Brazilian Carnauba Wax</label></li>
+<li><label><input type="checkbox" name="Clay Bar"> Clay Bar</label></li>
+<li><label><input type="checkbox" name="Wheel cleaning"> Wheel cleaning</label></li>
+<li><label><input type="checkbox" name="Tire Dressing"> Tire Dressing</label></li>
+<li><label><input type="checkbox" name="Tire Barrels Cleaned"> Tire Barrels Cleaned</label></li>
+<li><label><input type="checkbox" name="Door jambs cleaned"> Door jambs cleaned</label></li>
+<li><label><input type="checkbox" name="Exterior glass cleaned"> Exterior glass cleaned</label></li>
+<li><label><input type="checkbox" name="Gas Cap Cleaned"> Gas Cap Cleaned</label></li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Interior Detail</h2>
+<ul class="checklist">
+<li><label><input type="checkbox" name="Deep interior vacuum"> Deep interior vacuum</label></li>
+<li><label><input type="checkbox" name="Floor mats removed & cleaned"> Floor mats removed & cleaned</label></li>
+<li><label><input type="checkbox" name="Dashboard detailed"> Dashboard detailed</label></li>
+<li><label><input type="checkbox" name="Center console detailed"> Center console detailed and inside console</label></li>
+<li><label><input type="checkbox" name="Cupholders detailed"> Cupholders detailed</label></li>
+<li><label><input type="checkbox" name="Door panels detailed"> Door panels detailed</label></li>
+<li><label><input type="checkbox" name="Front Vents detailed"> Front Vents detailed</label></li>
+<li><label><input type="checkbox" name="Back Vents detailed"> Back Vents detailed</label></li>
+<li><label><input type="checkbox" name="Interior glass cleaned"> Interior glass cleaned</label></li>
+<li><label><input type="checkbox" name="All mirrors cleaned"> All mirrors cleaned - rearview headliner mirrors</label></li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Deep Seat Cleaning</h2>
+<ul class="checklist">
+<li><label><input type="checkbox" name="Seat steaming"> Seat steaming</label></li>
+<li><label><input type="checkbox" name="Seat shampoo extraction"> Seat shampoo and extraction</label></li>
+<li><label><input type="checkbox" name="Stain removal seats"> Stain removal from seats</label></li>
+<li><label><input type="checkbox" name="Leather Seat Cleaning"> Leather Seat Cleaning</label></li>
+<li><label><input type="checkbox" name="Leather Seat Conditioning"> Leather Seat Conditioning</label></li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Carpet & Floor Treatment</h2>
+<ul class="checklist">
+<li><label><input type="checkbox" name="Carpet agitation"> Carpet agitation</label></li>
+<li><label><input type="checkbox" name="Complete floor shampoo"> Complete floor shampoo</label></li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Headliner Detail</h2>
+<ul class="checklist">
+<li><label><input type="checkbox" name="Headliner Cleaning"> Headliner Cleaning</label></li>
+<li><label><input type="checkbox" name="Headliner stain removal"> Headliner stain removal</label></li>
+<li><label><input type="checkbox" name="Headliner Fabric Mirrors Cleaning"> Headliner Fabric Mirrors Cleaning</label></li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Protection & Finish</h2>
+<ul class="checklist">
+<li><label><input type="checkbox" name="Banana creme dressing"> Banana creme dressing (rubber & vinyl)</label></li>
+<li><label><input type="checkbox" name="Interior Dressing"> Interior Dressing</label></li>
+<li><label><input type="checkbox" name="Deodarizer"> Deodarizer</label></li>
+<li><label><input type="checkbox" name="Tree Air Freshner"> Tree Air Freshner</label></li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Final Quality Check</h2>
+<ul class="checklist">
+<li><label><input type="checkbox" name="Final walk-around inspection"> Final walk-around inspection</label></li>
+<li><label><input type="checkbox" name="Touch-up wipe down"> Touch-up wipe down</label></li>
+<li><label><input type="checkbox" name="Windows rechecked"> Windows rechecked</label></li>
+<li><label><input type="checkbox" name="Tires final shine check"> Tires final shine check</label></li>
+<li><label><input type="checkbox" name="Customer ready"> Customer ready</label></li>
+</ul>
+</div>
+
+<br><br>
+<button type="submit">Submit Checklist</button>
+
+</div>
+</form>
+
+</body>
+</html>
