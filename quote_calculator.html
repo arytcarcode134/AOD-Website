@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="col-lg-5">
+      <div class="location-form">
+        <h3>Ready for a New Car?</h3>
+        <h3>Car Cost Quote Calculator</h3>
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="control-group">
+
+            <label for="cars">Select Your Car Type:</label>
+            <select name="cars" id="cars">
+              <option value="sedan">Sedan/ Hatchback/ Coupe</option>
+              <option value="suv">SUV/ Crossover</option>
+              <option value="pickup-truck">Pickup Truck</option>
+              <option value="semi-truck">Semi-Truck</option>
+            </select>
+
+            <br><br>
+          </div>
+          <div class="control-group">
+            <h4>Interior Detailing</h4>
+
+            <label for="pet-sand">Any Pet Hair or Sand?:</label>
+            <br>
+            <input type="checkbox" id="pet-hair" name="pet-hair" value="Pet Hair">
+            <label for="pet-hair"> Pet Hair</label><br>
+            <input type="checkbox" id="sand" name="sand" value="Sand">
+            <label for="sand">Sand</label><br>
+             <br>
+              <label for="pet-sand">Would you like Shampooing (Extraction) and Steaming of the....?:</label>
+            <br>
+            <input type="checkbox" id="carpets" name="carpets" value="Carpets">
+            <label for="carpets">Carpets</label><br>
+            <input type="checkbox" id="seats" name="seats" value="Seats">
+            <label for="seats"> Seats</label><br>
+
+            <br>
+            <h4>Exterior Detailing</h4>
+            <label for="cars">How long do you want your paint to be protected?</label>
+            <br><br>
+            <input type="radio" id="spray-wax" name="wax" value="spray-wax">
+            <label for="spray-wax">2-4 Weeks of Paint Protection</label><br>
+            <input type="radio" id="brazilian-wax" name="wax" value="brazilian-wax">
+            <label for="brazilian-wax">1-2 Months of Paint Protection</label><br>
+            <input type="radio" id="sealent" name="wax" value="sealent">
+            <label for="sealent">2-4 Months of Paint Protection</label>
+
+            <!-- <br><br>
+            <label for="cars">Would you like your Car to be Polished?</label>
+            <br><br>
+            <input type="radio" id="yes-polish" name="polish" value="yes-polish">
+            <label for="yes-polish">Yes</label><br>
+            <input type="radio" id="no-polish" name="polish" value="no-polish">
+            <label for="no-polish">No</label><br> -->
+          
+            <br><br><br>
+          </div>
+
+          <span>Enter Below to Receive a 10% Off Coupon</span>
+          <br><br>
+          <div class="control-group">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required="required"
+              name="email"
+            />
+          </div>
+          <div class="control-group">
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="Phone Number"
+              required="required"
+              name="phone"
+            />
+          </div>
+          <div class="control-group">
+            <input
+              type="checkbox"
+              name="receive-marketing"
+              id="marketing-checkbox"
+              label="checkbox-marketing"
+            />
+            <span style="color: black">Check to Receive Marketing and Deals</span>
+            <br><br>
+          </div>
+          <div>
+            <button class="btn btn-custom" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
