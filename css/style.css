@@ -2340,3 +2340,24 @@ a:focus {
   }
 }
 
+.dropdown-menu {
+  border: none;
+  border-radius: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+
+/* Do not show call now button with numbe on mobile */
+@media screen and (max-width: 800px) {
+  #call-now-button-desktop {
+    display: none !important;
+    
+}
+}
+
+
+
