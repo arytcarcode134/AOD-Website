@@ -1,4 +1,4 @@
-# robots.txt for https://theartofdetailing.netlify.app/
+# robots.txt for https://theartofdetailingpalmbeach.com/
 
 User-agent: *
 
@@ -6,4 +6,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location (update once generated)
-Sitemap: https://theartofdetailing.netlify.app/sitemap.xml
+Sitemap: https://theartofdetailingpalmbeach.com/sitemap.xml
