@@ -35,14 +35,12 @@ function calculatePackage(data) {
   }
 
   let packages = {
-    basicSedan: {
-      name: "Essential Clean",
-      price: 100,
-    },
-
-    fullDetailSedan: {
+    
+    deluxeDetail: {
       name: "Deluxe Detail",
-      price: 240,
+      sedanPrice: 240,
+      smallSUVPrice: 275,
+      largeSUVPrice: 300,
     },
   };
 
@@ -53,15 +51,13 @@ function calculatePackage(data) {
   if (data.vehicleType == "sedan") {
     if (data.seatsCleaned && data.carpetsCleaned == true) {
 
-      totalEstimate += packages.fullDetailSedan.price;
+      totalEstimate += packages.deluxeDetail.sedanPrice;
       if (data.waxProtection == "sealant") {
         // Deluxe Detail with sealant upgrade
         addOnsList.push("Sealant");
         totalAddOns += addOnsPrices.sealant;
       }
-      else {
-
-      }
+     
     } else {
       // Basic Detail, everything else is an add-on
     }
