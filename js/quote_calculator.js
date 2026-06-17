@@ -26,10 +26,12 @@ function calculatePackage(data) {
   let totalAddOns = 0;
   let pacakgeSuggestion = "";
   let addOnsList = [];
+  let detailPackage = "";
 
   let addOnsPrices = {
 
-    sealant: 50
+    sealant: 50,
+    paste_wax: 20
 
 
   }
@@ -42,6 +44,12 @@ function calculatePackage(data) {
       smallSUVPrice: 275,
       largeSUVPrice: 300,
     },
+    basicDetail: {
+      name: "Basic Detail (Essential Clean)",
+      sedanPrice: 100,
+      smallSUVPrice: 130,
+      largeSUVPrice: 150,
+    },
   };
 
   // Logic for Packages
@@ -52,16 +60,47 @@ function calculatePackage(data) {
     if (data.seatsCleaned && data.carpetsCleaned == true) {
 
       totalEstimate += packages.deluxeDetail.sedanPrice;
-      if (data.waxProtection == "sealant") {
-        // Deluxe Detail with sealant upgrade
-        addOnsList.push("Sealant");
-        totalAddOns += addOnsPrices.sealant;
-      }
+      detailPackage = packages.deluxeDetail.name;
      
     } else {
       // Basic Detail, everything else is an add-on
+      totalEstimate += packages.basicDetail.sedanPrice;
+      detailPackage = packages.basicDetail.name;
+
+       if (data.waxProtection == "sealant") {
+        addOnsList.push("Sealant");
+        totalAddOns += addOnsPrices.sealant;
+      }
+       if (data.waxProtection == "paste-wax") {
+        addOnsList.push("Paste Wax (Hard Wax)");
+        totalAddOns += addOnsPrices.paste_wax;
+      }
     }
   }
+
+  else if (data.vehicleType == "suv") {
+     if (data.seatsCleaned && data.carpetsCleaned == true) {
+
+      totalEstimate = (packages.deluxeDetail.smallSUVPrice + packages.deluxeDetail.largeSUVPrice)/2;
+      detailPackage = packages.deluxeDetail.name;
+  
+     
+    } else {
+      // Basic Detail, everything else is an add-on
+
+      if (data.waxProtection == "sealant") {
+        addOnsList.push("Sealant");
+        totalAddOns += addOnsPrices.sealant;
+      }
+        if (data.waxProtection == "paste-wax") {
+        addOnsList.push("Paste Wax (Hard Wax)");
+        totalAddOns += addOnsPrices.paste_wax;
+      }
+    }
+
+  }
+
+  // Price increase for pet hair and/or sand
 
   if (data.petHair) {
     totalEstimate += 20;
