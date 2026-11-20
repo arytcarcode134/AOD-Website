@@ -320,7 +320,7 @@
     <!-- Three Panel End -->
 
 
-    <!-- Facts Start -->
+  <!-- Facts Start -->
     <div class="facts" data-parallax="scroll">
       <div class="container">
         <div class="row">
@@ -328,25 +328,27 @@
             <div class="facts-item">
               <i class="fa fa-map-marker-alt"></i>
               <div class="facts-text">
-                <h3 data-toggle="counter-up">30</h3>
+                <h3 data-toggle="counter-up" id="city-count">30</h3>
                 <p>Cities Served</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="facts-item">
-              <i class="fa fa-user"></i>
-              <div class="facts-text">
-                <h3 data-toggle="counter-up">2</h3>
-                <p>Car Detailers</p>
-              </div>
+              <a href="mobile-car-wash-detailing-promo.html">
+                <i class="fa fa-user"></i>
+                <div class="facts-text">
+                  <!-- <h3 data-toggle="counter-up">2</h3> -->
+                  <p>Click Here for Deals and Promos</p>
+                </div>
+              </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="facts-item">
               <i class="fa fa-users"></i>
               <div class="facts-text">
-                <h3 data-toggle="counter-up">110</h3>
+                <h3 data-toggle="counter-up" id="review-count">105</h3>
                 <p>5 Star Google Reviews</p>
               </div>
             </div>
@@ -355,7 +357,7 @@
             <div class="facts-item">
               <i class="fa fa-check"></i>
               <div class="facts-text">
-                <h3 data-toggle="counter-up">300</h3>
+                <h3 data-toggle="counter-up" id="car-count">300</h3>
                 <p>Cars Detailed</p>
               </div>
             </div>
@@ -902,6 +904,7 @@
 
     <!-- Template Javascript -->
     <script src="../js/main.js"></script>
+    <script src="../js/variable-declarations.js"></script>
 
   <script>
   document.querySelectorAll('.ba-container').forEach(container => {
