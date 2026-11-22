@@ -1,0 +1,22 @@
+/* Desktop 768px and higher */
+
+
+/* Only show Call Now on mobile devices */
+
+.mobile-only-button {
+    display: block;
+}
+.desktop-only-button {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .mobile-only-button {
+        display: none;
+    }
+
+    .desktop-only-button {
+        display: block;
+    }
+}
